@@ -4,15 +4,15 @@ Aquest projecte és una simulació interactiva de vehicles desenvolupada en **Py
 
 ## Característiques Principals
 
-* **Motor de Joc:** Gestió de moviment sobre una matriu de coordenades amb verificació d'asfalt (carretera).
+* **Motor de Joc:** Gestió de moviment sobre una finestra.
 * **Càmera Dinàmica:** Seguiment automàtic del vehicle principal (cotxe blanc) per mantenir-lo sempre centrat.
 * **Gestió de Circuits:** Mapes carregats mitjançant fitxers **JSON**, permetent definir la geometria de la carretera.
 * **Sistema de Col·lisions:** Detecció en temps real entre vehicles i obstacles.
 * **Modes de Joc:**
-    * **Conducció Normal:** Mode lliure per circular sense pressió amb altres vehicles.
+    * **Conducció Normal:** Mode lliure per circular amb cotxes que van amb el mateix sentit.
     * **Mode Obstacles:** Mode de supervivència amb recollida d'objectes i trànsit en contra:
-        * 🟨 **Blocs Grocs:** Atorguen vides extra.
-        * 🟥 **Blocs Vermells:** Resten vides al jugador.
+        * 🟨 **Blocs Grocs:** Atorguen vides extra. Pretenen simular "monedes".
+        * 🟥 **Blocs Vermells:** Resten vides al jugador. Pretenen simular "obstacles".
 
 ## Controls
 
