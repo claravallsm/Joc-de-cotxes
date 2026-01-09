@@ -1,1 +1,40 @@
-Aquest projecte és una simulació de cotxes amb Python i Tkinter que mou vehicles sobre un circuit definit en un fitxer JSON. El programa gestiona col·lisions entre vehicles i verifica constantment si el cotxe es manté sobre l'asfalt de la carretera. Pots triar entre dues modalitats al menú inicial que són jugar sense obstacles per conduir normalment amb altres vehicles o jugar amb obstacles on apareixen blocs grocs que sumen vides i blocs rojos que en resten. En el mode d'obstacles també hi ha cotxes en sentit contrari que s'han d'esquivar per fer la partida més divertida. La càmera segueix sempre el teu vehicle blanc i pots interactuar amb les tecles de direcció per accelerar frenar o girar a l'esquerra i a la dreta. Per executar-ho només cal tenir instal·lat Python i llançar el fitxer principal des de la terminal amb la comanda python animacio punt py.
+# Simulador de Cotxes: Conducció i Obstacles
+
+Aquest projecte és una simulació interactiva de vehicles desenvolupada en **Python** utilitzant la llibreria gràfica **Tkinter**. El programa permet gestionar la física de moviment d'un vehicle, la detecció de col·lisions i la interacció amb un entorn dinàmic definit mitjançant fitxers de dades.
+
+## Característiques Principals
+
+* **Motor de Joc:** Gestió de moviment sobre una matriu de coordenades amb verificació d'asfalt (carretera).
+* **Càmera Dinàmica:** Seguiment automàtic del vehicle principal (cotxe blanc) per mantenir-lo sempre centrat.
+* **Gestió de Circuits:** Mapes carregats mitjançant fitxers **JSON**, permetent definir la geometria de la carretera.
+* **Sistema de Col·lisions:** Detecció en temps real entre vehicles i obstacles.
+* **Modes de Joc:**
+    * **Conducció Normal:** Mode lliure per circular sense pressió amb altres vehicles.
+    * **Mode Obstacles:** Mode de supervivència amb recollida d'objectes i trànsit en contra:
+        * 🟨 **Blocs Grocs:** Atorguen vides extra.
+        * 🟥 **Blocs Vermells:** Resten vides al jugador.
+
+## Controls
+
+Utilitza el teclat per controlar el vehicle blanc:
+
+| Tecla | Acció |
+| :--- | :--- |
+| **↑** | Accelerar |
+| **↓** | Frenar  |
+| **←** | Girar a l'esquerra |
+| **→** | Girar a la dreta |
+
+---
+
+##  Instal·lació i Compilació
+
+El projecte requereix una instal·lació estàndard de Python 3. Segueix aquests passos per executar-lo:
+
+1.  **Clona o descarrega** els fitxers del repositori.
+2.  Assegura't de tenir instal·lat **Python 3**.
+3.  Obre una terminal al directori del projecte.
+4.  Executa el fitxer principal amb la següent comanda:
+
+```bash
+python animacio.py
